@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fetch api & Datatable</title>
+    <!-- owl carsoual css cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- bootsrap cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- datatable cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="sample.css" />
+  </head>
+  <body>
+    <section id="upper-grid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 birthday">
+            <div class="classWithPad">
+              <h6 class="newJoineeHeading">Birthday </h6>
+              <button id="thisWeek">This Week</button>
+ 
+              <button id="pastWeek">Past Week </button>
+
+                <button id="upcoming">Upcoming</button>
+
+                <div id="birthdays" class="text-center">
+               
+           
+                 
+                     
+               </div>
+               </div>
+
+              
+            </div>
+        
+          <div class="col-md-6  newJoinee">
+            <div class="classWithPad">
+              <p class="newJoineeHeading">New Joinee</p>
+              <div class="owl-carousel owl-theme text-center owl-one"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- table area -->
+    <section id="tableInfo">
+      <table
+        id="example"
+        class="table table-striped table-bordered"
+        style="width: 100%"
+      >
+        <tfoot style="display: table-header-group">
+          <tr>
+            <th>User</th>
+            <th>Full Name</th>
+            <th>Dept</th>
+            <th>Email Id</th>
+            <th>Designation</th>
+            <th>Phone</th>
+          </tr>
+        </tfoot>
+        <thead>
+          <tr>
+            <th class="text-center">User</th>
+            <th class="text-center">Full Name</th>
+            <th class="text-center">Dept</th>
+            <th class="text-center">Email Id</th>
+            <th class="text-center">Designation</th>
+            <th class="text-center">Phone</th>
+          </tr>
+        </thead>
+        <tbody class="text-center"></tbody>
+      </table>
+    </section>
+
+    <!-- js library -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
+    <!-- owl carousel cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!--  js link -->
+    <script src="sample.js"></script>
+  </body>
+</html>
